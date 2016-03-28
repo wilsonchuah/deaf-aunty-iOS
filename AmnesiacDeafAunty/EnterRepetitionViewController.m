@@ -19,13 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if([[self.speech uppercaseString] isEqualToString:self.speech]){
-        if ([self.speech isEqualToString:@"I love ya, aunty."]){
-            self.auntyResponseLabel.text = @"GOODBYE DEAR";
-        } else {
-            self.auntyResponseLabel.text = @"NO,WE CAN'T DO THAT";
-        }
-    } else {
+    if ([self.speech isEqualToString:@"I love ya, aunty."]){
+			self.auntyResponseLabel.text = @"NO,WE CAN'T DO THAT";
+    } else if ([[self.speech uppercaseString] isEqualToString:self.speech]){
+			self.auntyResponseLabel.text = @"GOODBYE DEAR";
+		} else {
         self.auntyResponseLabel.text = @"HUH?SPEAK UP,WILSON";
     }
     // Do any additional setup after loading the view.
