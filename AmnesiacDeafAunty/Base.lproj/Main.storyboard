@@ -29,11 +29,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yto-3b-vuJ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yto-3b-vuJ" customClass="submitSegue">
                                 <rect key="frame" x="131" y="251" width="38" height="30"/>
                                 <state key="normal" title="Say It"/>
                                 <connections>
-                                    <segue destination="7dg-Xr-hJw" kind="push" id="FNU-rp-74K"/>
+                                    <segue destination="7dg-Xr-hJw" kind="push" id="MsI-ld-C5m"/>
                                 </connections>
                             </button>
                         </subviews>

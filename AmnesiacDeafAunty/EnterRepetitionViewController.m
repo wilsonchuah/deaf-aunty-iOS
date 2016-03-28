@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if ([self.speech isEqualToString:@"I love ya, aunty."]){
-			self.auntyResponseLabel.text = @"NO,WE CAN'T DO THAT";
-    } else if ([[self.speech uppercaseString] isEqualToString:self.speech]){
 			self.auntyResponseLabel.text = @"GOODBYE DEAR";
+    } else if ([[self.speech uppercaseString] isEqualToString:self.speech]){
+			self.auntyResponseLabel.text = @"NO,WE CAN'T DO THAT";	
 		} else {
         self.auntyResponseLabel.text = @"HUH?SPEAK UP,WILSON";
     }

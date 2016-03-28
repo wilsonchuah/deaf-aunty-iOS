@@ -25,10 +25,17 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    EnterRepetitionViewController *destination = segue.destinationViewController;
+		EnterRepetitionViewController *destination = segue.destinationViewController;
     
     destination.speech = self.speechTextField.text;
- 
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+	if(self.speechTextField.text.length != 0){
+		return YES;
+	} else {
+		return NO;
+	}
 }
 
 - (void)didReceiveMemoryWarning {

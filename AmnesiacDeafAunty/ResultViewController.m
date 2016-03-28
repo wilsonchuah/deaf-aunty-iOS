@@ -22,7 +22,7 @@
 	NSString *totalResponse = @"";
 	for (NSInteger i = timesToRepeatInt; i >= 0 ; i = i - 1) {
 		if (i > 1){
-				totalResponse = [[totalResponse stringByAppendingString:self.auntieResponse] stringByAppendingString:@" "];
+				totalResponse = [[totalResponse stringByAppendingString:self.auntieResponse] stringByAppendingString:@" \n"];
 		} else if (i == 1){
 			totalResponse = [totalResponse stringByAppendingString:self.auntieResponse];
 		}
