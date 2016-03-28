@@ -7,9 +7,11 @@
 //
 
 #import "EnterRepetitionViewController.h"
+#import "ResultViewController.h"
 
 @interface EnterRepetitionViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *auntyResponseLabel;
+@property (weak, nonatomic) IBOutlet UITextField *timesRepeated;
 
 @end
 
@@ -27,6 +29,13 @@
         self.auntyResponseLabel.text = @"HUH?SPEAK UP,WILSON";
     }
     // Do any additional setup after loading the view.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+	ResultViewController *destination = segue.destinationViewController;
+	destination.timesToRepeat = self.timesRepeated.text;
+	destination.auntieResponse = self.auntyResponseLabel.text;
+ 
 }
 
 

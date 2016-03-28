@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5048881CA91B9400FBD743 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5048871CA91B9400FBD743 /* ResultViewController.m */; };
 		785643551CA9048A008902C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785643541CA9048A008902C7 /* main.m */; };
 		785643581CA9048A008902C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 785643571CA9048A008902C7 /* AppDelegate.m */; };
 		7856435B1CA9048A008902C7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7856435A1CA9048A008902C7 /* RootViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F5048861CA91B9400FBD743 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		3F5048871CA91B9400FBD743 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		785643501CA9048A008902C7 /* AmnesiacDeafAunty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmnesiacDeafAunty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		785643541CA9048A008902C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		785643561CA9048A008902C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				785643591CA9048A008902C7 /* RootViewController.h */,
 				7856435A1CA9048A008902C7 /* RootViewController.m */,
 				7856435C1CA9048A008902C7 /* Main.storyboard */,
+				3F5048861CA91B9400FBD743 /* ResultViewController.h */,
+				3F5048871CA91B9400FBD743 /* ResultViewController.m */,
 				7856436A1CA90B5E008902C7 /* EnterRepetitionViewController.h */,
 				7856436B1CA90B5E008902C7 /* EnterRepetitionViewController.m */,
 				7856435F1CA9048A008902C7 /* Assets.xcassets */,
@@ -157,6 +162,7 @@
 				7856435B1CA9048A008902C7 /* RootViewController.m in Sources */,
 				785643581CA9048A008902C7 /* AppDelegate.m in Sources */,
 				7856436C1CA90B5E008902C7 /* EnterRepetitionViewController.m in Sources */,
+				3F5048881CA91B9400FBD743 /* ResultViewController.m in Sources */,
 				785643551CA9048A008902C7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +314,7 @@
 				785643691CA9048A008902C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
