@@ -31,10 +31,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 	ResultViewController *destination = segue.destinationViewController;
-	destination.timesToRepeat = self.timesRepeated.text;
-	destination.auntieResponse = self.auntyResponseLabel.text;
+	if ([[segue identifier] isEqual:@"randomNum"]){
+		destination.timesToRepeat = [NSString stringWithFormat:@"%i", arc4random_uniform(10)];
+	} else {
+		destination.timesToRepeat = self.timesRepeated.text;
+	}
+	destination.auntieResponse = [[NSMutableAttributedString alloc] initWithString:self.auntyResponseLabel.text];
  
 }
+
 
 
 

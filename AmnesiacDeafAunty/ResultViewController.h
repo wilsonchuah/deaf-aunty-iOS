@@ -10,5 +10,5 @@
 
 @interface ResultViewController : UIViewController
 @property NSString *timesToRepeat;
-@property NSString *auntieResponse;
+@property NSMutableAttributedString *auntieResponse;
 @end
