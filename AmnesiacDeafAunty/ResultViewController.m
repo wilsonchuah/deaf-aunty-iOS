@@ -21,12 +21,13 @@
 	NSInteger timesToRepeatInt = [self.timesToRepeat intValue];
 	NSString *totalResponse = @"";
 	for (NSInteger i = timesToRepeatInt; i >= 0 ; i = i - 1) {
-		if ([totalResponse isEqualToString:@""]){
+		if (i > 1){
 				totalResponse = [[totalResponse stringByAppendingString:self.auntieResponse] stringByAppendingString:@" "];
 		} else if (i == 1){
 			totalResponse = [totalResponse stringByAppendingString:self.auntieResponse];
 		}
 	}
+    self.textView.text = totalResponse;
 }
 
 
